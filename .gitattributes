@@ -1,0 +1,2 @@
+# Treat all Word documents as binary — prevents corrupt merges and useless diffs
+*.docx binary

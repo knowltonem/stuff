@@ -1,9 +1,25 @@
+# macOS
 .DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+
+# Word lock files
+~$*
+
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
-*.log
-*.zip
+
+# Secrets / credentials (guard against accidental commit)
 .env
-venv/
-.venv/
+.env.*
+*.pem
+*.key
+*.secret
+
+# Runbook auto-generated files
+_Runbook/.runbook_state.json
+_Runbook/Backup/
+_Runbook/*.log

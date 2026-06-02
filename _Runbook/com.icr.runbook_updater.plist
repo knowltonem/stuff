@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.icr.runbook_updater</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>-u</string>
+        <string>/Users/edknowlt/Documents/ICR_Automation/_Runbook/runbook_updater.py</string>
+        <string>--once</string>
+    </array>
+
+    <!-- Start once when the user logs in — not a persistent daemon -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Do NOT keep alive — run once and exit -->
+    <key>KeepAlive</key>
+    <false/>
+
+    <!-- Log output -->
+    <key>StandardOutPath</key>
+    <string>/Users/edknowlt/Documents/ICR_Automation/_Runbook/runbook_updater.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/edknowlt/Documents/ICR_Automation/_Runbook/runbook_updater_error.log</string>
+
+    <!-- Working directory -->
+    <key>WorkingDirectory</key>
+    <string>/Users/edknowlt/Documents/ICR_Automation/_Runbook</string>
+</dict>
+</plist>
