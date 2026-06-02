@@ -1,0 +1,7 @@
+# ICR Automation — Python dependencies
+# Install: pip install -r requirements.txt
+
+python-docx          # Word .docx generation (all runners)
+lxml                 # XML manipulation for python-docx internals (runner_core, runners)
+pypdf                # PDF signature field injection (finalize_doc.py)
+vsdx                 # Visio .vsdx editing (run_system_diagram.py — skeleton)
